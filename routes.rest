@@ -3,7 +3,15 @@
 GET http://localhost:3000/contacts
 content-type: application/json
 
+###Get 1 contact
+GET http://localhost:3000/contacts/69b2260b8b5839f04bcfdb07
+content-type: application/json
+
 //PRODUCTION
 ###Get all contacts
 GET https://cse341-project1-1-eij1.onrender.com/contacts
+content-type: application/json
+
+###Get 1 contact
+GET https://cse341-project1-1-eij1.onrender.com/contacts/69b2260b8b5839f04bcfdb07
 content-type: application/json
