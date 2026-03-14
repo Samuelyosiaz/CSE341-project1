@@ -1,5 +1,4 @@
 const dotenv = require('dotenv');
-
 dotenv.config();
 
 const MongoClient = require('mongodb').MongoClient;
@@ -13,11 +12,11 @@ const initDb = (callback) => {
     }
     MongoClient.connect(process.env.MONGODB_URL)
         .then((client) => {
-            database = client;
+            _db = client.db();
             callback(null, _db);
         }).catch((err) => {
             callback(err);
-    })
+        });
 };
 
 
