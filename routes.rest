@@ -7,6 +7,36 @@ content-type: application/json
 GET http://localhost:3000/contacts/69b2260b8b5839f04bcfdb07
 content-type: application/json
 
+###Create Contact
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Probe",
+    "lastName": "Test",
+    "email": "test@example.com",
+    "favoriteColor": "TestColor",
+    "birthday": "25-12-1999"
+}
+
+###PUT contact
+PUT http://localhost:3000/contacts/  HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Jacobo",
+    "lastName": "Sandoval",
+    "email": "jacobotomas@gmail.com",
+    "favoriteColor": "Red",
+    "birthday": "7-03-1974"
+}
+
+###DETELE contact
+DELETE http://localhost:3000/contacts/ HTTP/1.1
+
+
+
+
 //PRODUCTION
 ###Get all contacts
 GET https://cse341-project1-1-eij1.onrender.com/contacts
@@ -15,3 +45,30 @@ content-type: application/json
 ###Get 1 contact
 GET https://cse341-project1-1-eij1.onrender.com/contacts/69b2260b8b5839f04bcfdb07
 content-type: application/json
+
+###Create Contact
+POST https://cse341-project1-1-eij1.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Probe",
+    "lastName": "Test",
+    "email": "test@example.com",
+    "favoriteColor": "TestColor",
+    "birthday": "25-12-1999"
+}
+
+###PUT contact
+PUT https://cse341-project1-1-eij1.onrender.com/contacts/  HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Jacobo",
+    "lastName": "Sandoval",
+    "email": "jacobotomas@gmail.com",
+    "favoriteColor": "Red",
+    "birthday": "7-03-1974"
+}
+
+###DETELE contact
+DELETE https://cse341-project1-1-eij1.onrender.com/contacts/ HTTP/1.1
